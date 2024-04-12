@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.beginsecure.reddit002.signupController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FF4500;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://freelogopng.com/images/all_img/1658834272reddit-logo-transparent.png" />
+               </image></ImageView>
+            <Label layoutX="55.0" layoutY="324.0" text="reddit.com">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="408.0">
+         <children>
+            <Label layoutX="60.0" layoutY="40.0" text="Name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="60.0" layoutY="86.0" text="Last name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="136.0" text="Gender">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="61.0" layoutY="189.0" text="Email">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="60.0" layoutY="241.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="61.0" layoutY="291.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="combo_gender" layoutX="169.0" layoutY="131.0" prefWidth="150.0" />
+            <Button fx:id="button_signup" layoutX="112.0" layoutY="322.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: FF4500; -fx-cursor: hand;" text="Sign up">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="54.0" layoutY="368.0" text="Already a member?">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_login" layoutX="219.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Log In" textFill="#1f0adc" underline="true" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tf_name" layoutX="172.0" layoutY="35.0" />
+            <TextField fx:id="tf_lastname" layoutX="171.0" layoutY="81.0" />
+            <TextField fx:id="tf_email" layoutX="170.0" layoutY="184.0" />
+            <TextField fx:id="tf_username" layoutX="173.0" layoutY="236.0" />
+            <TextField fx:id="tf_password" layoutX="174.0" layoutY="286.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

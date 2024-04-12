@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.beginsecure.reddit002.controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FF4500;">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="100.0">
+               <image>
+                  <Image url="https://www.edigitalagency.com.au/wp-content/uploads/new-reddit-logo-wordmark-with-snoo-head-on-a-red-background.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="207.0" text="reddit.com">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="412.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Label layoutX="45.0" layoutY="178.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="161.0" fitWidth="163.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.freepik.com/premium-vector/lock-logo-security-icon-silhouette-open-lock_67323-97.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="251.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="349.0" text="Not a user">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="tf_username" layoutX="191.0" layoutY="179.0" />
+            <PasswordField fx:id="tf_password" layoutX="191.0" layoutY="252.0" />
+            <Button fx:id="button_login" layoutX="110.0" layoutY="295.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: FF4500; -fx-cursor: hand;" text="Log in">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_signup" layoutX="193.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign up" textFill="#1237dc" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
